@@ -10,11 +10,29 @@ class MaintanenceMonitorTest {
     @Test
     void resetMessage() {
         String expected = "";
-
+D
         m.setMessage("lmao");
         m.resetMessage();
         String result = m.getMessage();
 
+    @Test
+    void testGetMessage() {
+        // Arrange
+        String expected = null;
+
+        // Act
+        String result = m.getMessage();
+    
+    @Test
+    void testSetMessage() {
+        // Arrange
+        String expected = "lmao";
+
+        // Act
+        m.setMessage("lmao");
+        var result = m.getMessage();
+
+        // Assert
         assertEquals(expected, result);
     }
 }
