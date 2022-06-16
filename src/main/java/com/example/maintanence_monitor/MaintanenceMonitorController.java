@@ -31,6 +31,6 @@ public class MaintanenceMonitorController {
     @RequestMapping("/resetMessage")
     public void setStatus()
     {
-        maintanenceMonitor.setMessage("");
+        maintanenceMonitor.resetMessage();
     }
 }

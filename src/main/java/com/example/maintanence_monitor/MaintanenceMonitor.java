@@ -9,6 +9,9 @@ public class MaintanenceMonitor {
         this.message = message;
     }
 
-    private String message;
+    public void resetMessage() {
+        message = "";
+    }
 
+    private String message;
 }
