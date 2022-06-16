@@ -13,5 +13,5 @@ public class MaintanenceMonitor {
         message = "";
     }
 
-    private String message;
+    private String message = "";
 }
