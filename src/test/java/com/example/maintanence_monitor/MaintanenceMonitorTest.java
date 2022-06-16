@@ -10,11 +10,12 @@ class MaintanenceMonitorTest {
     @Test
     void resetMessage() {
         String expected = "";
-D
+
         m.setMessage("lmao");
         m.resetMessage();
         String result = m.getMessage();
-
+    }
+    
     @Test
     void testGetMessage() {
         // Arrange
@@ -22,6 +23,7 @@ D
 
         // Act
         String result = m.getMessage();
+    }
     
     @Test
     void testSetMessage() {
