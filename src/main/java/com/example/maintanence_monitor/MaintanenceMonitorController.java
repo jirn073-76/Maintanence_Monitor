@@ -22,28 +22,3 @@ public class MaintanenceMonitorController {
         return maintanenceMonitor.getMessage();
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-*
-*
-    @RequestMapping("/setMessage")
-    public void setStatus(@RequestParam String message)
-    {
-        maintanenceMonitor.setMessage(message);
-    }
-    * */

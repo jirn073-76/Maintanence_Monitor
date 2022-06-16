@@ -14,6 +14,15 @@ class MaintanenceMonitorTest {
 
         // Act
         String result = m.getMessage();
+    
+    @Test
+    void testSetMessage() {
+        // Arrange
+        String expected = "lmao";
+
+        // Act
+        m.setMessage("lmao");
+        var result = m.getMessage();
 
         // Assert
         assertEquals(expected, result);
