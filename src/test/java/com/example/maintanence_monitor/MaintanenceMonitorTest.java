@@ -8,6 +8,14 @@ class MaintanenceMonitorTest {
     MaintanenceMonitor m = new MaintanenceMonitor();
 
     @Test
+    void testGetMessage() {
+        // Arrange
+        String expected = null;
+
+        // Act
+        String result = m.getMessage();
+    
+    @Test
     void testSetMessage() {
         // Arrange
         String expected = "lmao";
