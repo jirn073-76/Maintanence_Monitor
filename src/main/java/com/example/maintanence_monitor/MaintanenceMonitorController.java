@@ -13,12 +13,23 @@ public class MaintanenceMonitorController {
     @RequestMapping("/status")
     public boolean getStatus()
     {
-        return true;
+        return maintanenceMonitor.getMessage().isBlank();
     }
 
     @RequestMapping("/getMessage")
     public String getMessage()
     {
         return maintanenceMonitor.getMessage();
+    }
+    @RequestMapping("/setMessage")
+    public void setStatus(@RequestParam String message)
+    {
+        maintanenceMonitor.setMessage(message);
+    }
+
+    @RequestMapping("/resetMessage")
+    public void setStatus()
+    {
+        maintanenceMonitor.resetMessage();
     }
 }
