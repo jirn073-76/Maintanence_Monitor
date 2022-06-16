@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @CrossOrigin
 public class MaintanenceMonitorController {
-
     MaintanenceMonitor maintanenceMonitor = new MaintanenceMonitor();
 
     @RequestMapping("/status")
